@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<form action="action_page.php" style="border:1px solid #ccc">
+  <div class="container">
+    <style>
+    h1 {
+      color: red;
+      font-size: 40px;
+    }
+  </style>
+    <h1 >REGISTRATION FORM</h1>
+    <style>
+    p {
+      color: black;
+      font-size: 20px;
+    }
+  </style>
+    <p style="font-family:Arial;">Please fill in this form to create an account.</p>
+  </div>  
+    <hr/>
+  <style>
+    label {
+      color: green;
+      font-size: 20px;
+    }
+  </style>
+  <table>
+     <label for="name"><b>Name</b></label>
+    <input type="text" placeholder="Enter Name" required name="name"/></table>
+    <br><br>
+     <table><label for="age"><b>Age</b></label>
+      <input type="number" placeholder="Enter age" required max="27"/></table>
+    <br><br>
+  <table><label for="gender"><b>Gender</b></label>
+  <br>
+     <label class="container">Male</label>
+      <input style="font-family:Arial;" type="radio" name="abcd"/>
+  <br>
+     <label class="container">Female</label>
+    <input style="font-family:Arial;" type="radio" name = "abcd"/></table>
+    <br><br>  
+     <table><label for="email"><b>Email</b></label>
+       <input type="email" placeholder="Enter Email" name="email" required/></table>
+    <br><br>
+  <script type="text">
+  function checkForm(action)
+  {
+    if(form.inputfield.value == "name") {
+      alert("Error: Input is invalid!");
+      form.inputfield.focus();
+      return false;
+    }
+    </script>
+     <table><label for="psw"><b>Password</b></label>
+       <input type="password" placeholder="Enter Password" name="psw" inputmode="numeric" required/></table>
+    <br><br>
+     <table><label for="nationality"><b>Nationality</b></label>
+     <select id="country" name="country">
+      <option value="australia">Australia</option>
+      <option value="canada">Canada</option>
+      <option value="usa">India</option>
+      <option value="india">Japan</option>
+      <option value="india">USA</option>
+       </select></table>
+   <br><br>
+  <table><label for="skills"><b>Skills</b></label>
+  <br>
+     <label class="container">Coding</label>
+      <input type="checkbox"/>
+  <br>
+     <label class="container">Finance</label>
+      <input type="checkbox"/>
+  <br>
+     <label class="container">Communication</label>
+      <input type="checkbox"/>
+  <br>
+     <label class="container">Problem Solving</label>
+    <input type="checkbox"/></table> 
+    <br><br>  
+     <table><label for="contact no."><b>Contact Number</b></label>
+       <input type="tel" placeholder="Enter Contact Number" name="contact no." size= "10" inputmode="numeric" minlength="10" maxlength="10"        </table>
+    <br><br><br><br>
+     <div class="clearfix">
+      <button type="button" class="cancelbtn">Cancel</button>
+      <button type="submit" class="signupbtn">Sign Up</button>
+    </div>
+
+</form>
+</html>  
